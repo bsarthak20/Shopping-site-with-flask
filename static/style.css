@@ -225,3 +225,83 @@ header{
     font-size: 13px;
 }
 
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .nav-search {
+        width: 90%;
+        margin: 10px 0;
+        flex-wrap: wrap;
+    }
+
+    .search-input input {
+        width: 100%;
+    }
+
+    .search-select select,
+    .search-icon {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .panel {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 10px;
+    }
+
+    .panel-ops {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .shopping-ops {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+    }
+
+    .hero-msg {
+        font-size: 0.75rem;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-search {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .nav-cart p,
+    .orders,
+    .return,
+    .signin,
+    .Accounts,
+    .add-second p,
+    .add-first {
+        font-size: 0.75rem;
+    }
+
+    .hero-msg {
+        font-size: 0.65rem;
+    }
+
+    .box h2 {
+        font-size: 1rem;
+    }
+}
